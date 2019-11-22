@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>LuegLueg - LookLook</title>
+  <meta name="author" content="Maia Engeli and the team at LuegLueg ">
+  <meta name="description" content="Swiss German-English Memospiel/Memory Game">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Style Sheets -->
+  <!--    <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />-->
+  <!--    <link rel="stylesheet" type="text/css" media="all" href="css/trunk.css" />-->
+
+  <link rel="stylesheet" href="/css/tachyons.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script type="text/javascript">
+      if (typeof jQuery == 'undefined')
+          document.write(unescape("%3Cscript src='js/jquery-1.9.js'" +
+              "type='text/javascript'%3E%3C/script%3E"))
+  </script>
+<!--  <script type="text/javascript" language="javascript" src="js/trunk.js"></script>-->
+  <!--[if lt ie 9]>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  .topnav {
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  </style>
+</head>
+<body class="black-90">
+
+<!--  ----------------------------------------------------------------- -->
+
+<header id="header" class="black-90  pt2 fixed w-100 bg-white" >
+  <div id="myTopnav" class="topnav tc bt bb b--dotted bl-0 br-0 bw2 w-90 pt2 pb1 center justify-between db-l flex-l ">
+    <a title="home" href="#" class="mh2 mh3-ns">
+      <img src="img/lueglueg_white_45.png" alt="lueglueg chärtli, lueglueg cards">
+    </a>
+    <a class="link black-90 tracked-ns dim no-underline pt1 v-mid f5-ns fw5 f5-ns f6 mh2 mh3-ns " title="Compare" href="#info">Info<span class="e">information</span>
+    </a>
+    <a class="link black-90 tracked-ns dim no-underline pt1 v-mid f5-ns f6 mh2 mh3-ns" title="docs" href="#aaleitig">Spiilaaleitig<span class="e">how to play</span>
+    </a>
+    <a class="link black-90 tracked-ns dim no-underline pt1 v-mid f5-ns f6 mh2 mh3-ns" title="Pricing" href="#bstelle">Bstelle<span class="e">order</span>
+    </a>
+    <a class="link black-90 tracked-ns dim no-underline pt1 v-mid f5-ns f6 ml2 ml3-ns mr3 mr4-ns  " title="Pricing" href="#impressum">Impressum<span class="e">imprint</span>
+    </a>
+    <a href="javascript:void(0);" class="icon black f2"  onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+<!--  <span class="db dn-l"> </span>-->
+<!--  <div class="hamburger dib dn-l">-->
+<!--<h2 class="darkblue">Menu-->
+<!--</h2>-->
+<!--</div>-->
+<!--<div class="popup false">-->
+<!--<div class="popupContainer bg-white br2">-->
+<!--<div class="popupCloseBtn darkblue">Close-->
+<!--</div>-->
+<!--<div class="darkblue pa3 pv2">-->
+<!--<h1 class="link mv0 tracked no-underline f3 fw4">-->
+
+<!--<span class=""><img src="img/lueglueg_white_45.png" />-->
+<!--</span>-->
+<!--</h1>-->
+<!--<div class="flex flex-wrap">-->
+<!--<a class="tracked w-50 b&#45;&#45;darkblue bw1 ttu tracked-ns dim no-underline darkblue fw6 f5" title="Sign Up" href="/">Free Trial-->
+<!--</a>-->
+<!--<a class="tracked w-50 b&#45;&#45;darkblue bw1 ttu tracked-ns dim no-underline darkblue fw6 f5" title="Pricing" href="/">Pricing-->
+<!--</a>-->
+<!--<a class="tracked w-50 b&#45;&#45;darkblue bw1 ttu tracked-ns dim no-underline darkblue fw6 f5" title="Best Screenshot Service" href="/">Alternatives-->
+<!--</a>-->
+<!--<a class="tracked w-50 b&#45;&#45;darkblue bw1 ttu tracked-ns dim no-underline darkblue fw6 f5" title="Docs" href="/">Docs-->
+<!--</a>-->
+<!--<a class="tracked w-50 b&#45;&#45;darkblue bw1 ttu tracked-ns dim no-underline darkblue fw6 f5" title="Demo" href="/">Demo-->
+<!--</a>-->
+<!--<a class="tracked w-50 b&#45;&#45;darkblue bw1 ttu tracked-ns dim no-underline darkblue fw6 f5" title="Sign In" href="/">Sign In-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</span>-->
+</header>
+<!--  ----------------------------------------------------------------------- -->
+<!--<div class="ma3 ma4-ns pa3 pa4-ns center">-->
+<div class="pl5-l pl3 pr5-l pr3">
+  <div class="pt6"> </div>
+  <h1 class="f1 z-2">LuegLueg <span class="e">LookLook</span></h1>
+  <div class="f3 z-2">Äs Memospiil mit 80 Chärtli, wo me mues d’Schwyzertütsch-Englisch Päärli finde. 
+    <span class="e">A memory game with 80 cards, where you have to find the Swiss German – English pairs.</span></div>
+  <div class="db pa2 "><img src="img/baby.png" class=" shadow-5" /> </div>
+  <div id="info" class="pt5"> </div>
+  <h2>Info
+    <span class="e"> About</span></h2>
+  <div>D’Idee für LuegLueg isch in Vancouver, Kanada entstande. De Maia ihri Fründin Sandra (ä Schwyzeri) und de Anders (än Kanadier) händ äs Chind übercho und s’hät gheisse dass d’Maia mit Schwyzertütsch muess hälfe. D’Idee isch dänn schnäll entstande, d’Umsetzig aber nu möglich gsi mit de Hilf vu de Pia (Grafikerin) und Andrea (Buchbinderi).<span class="e">  The idea for LuegLueg originated in Vancouver after Maia’s friend Sandra (Swiss) and Anders (Canadian) had a baby and Maia was asked to help with talking Swiss German to her. The idea then came quickly, but the realization required the collaboration with Pia (graphic design) and Andrea (bookbinding).</span>  </div>
+
+  <div>Schwizerdütsch, Schwiizertüütsch, Schwyzerdütsch – wie schriibt me das blos? Giits Schwyzertütsch so eigentli?  Es giit i jedem Dorf, i jeder Stadt en andere Dialäkt und kei einheitlichi Rechtschriibig – aber verstoh tüend sich z‘Schwyzer scho.  <span class="e">Swiss German, does it exist as such?  There are hundreds of different dialects in Switzerland, depending on region, city, or even town and there is no standardized spelling. Nevertheless, the Swiss understand each other.</span></div>
+
+  <div>D’Wörter im LuegLueg sind extra söttigi wo ganz anders sind als uf Standardtütsch. <span class="e"> The Swiss German words chosen for LuegLueg are words that are very different in standard German.</span></div>
+
+  <div id="aaleitig" class="pt5"> </div>
+  <h2>Spiilaaleitig
+    <span class="e"> How to play</span></h2>
+
+  <ol>
+    <li>alli Chärtli verdeckt usbreite
+      <span class="e"> spread out cards picture-side down</span></li>
+    <li> de erscht Spiiler dräit zwei Chärtli um, wänn sie zämepassed bhalte und wieder zwei umdräie, und so wiiter
+      <span class="e"> the first player flips 2 cards, keeps them if they match and flips another two, and so on</span></span></li>
+    <li> wänn sie nöd passed chunt de nöchscht dra
+      <span class="e"> if they don't match it's the next player's turn</span></li>
+    <li> gwünne tuet wär am meischte Päärli sammlet
+      <span class="e"> whoever collects the most pairs wins</span></li></ol>
+
+  <div id="bstelle" class="pt5"> </div>
+  <h2>Bstelle
+    <span class="e"> Order</span></h2>
+  <pre>
+         Vorname 
+       First name  
+       Nachname
+        Last name
+         Email
+        Email  
+       Telefonnummere
+        Phone number  
+       Aazahl
+        Quantity
+         Abholort (Ziit und di gnau Adresse i de Konfirmationsemail)
+        Pickup location (time and exact address in the confirmation email)
+         - Schipfe, Züri 
+       - Züri-Örlike
+       - Unterrengg, Langnau am Albis      </pre>
+
+
+
+  <div id="impressum" class="pt5"> </div>
+  <h2>Impressum
+    <span class="e">  Imprint</span></h2>
+  <div>Idee/<span class="el">Idea</span>: Maia Engeli</div>
+  <div> Grafik/<span class="el">Design</span>: Pia Thür</div>
+  <div>Schachtle/<span class="el">Box</span>: Andrea Kohler</div>
+  <div>  Föteli: verschiideni Fotografe (Name i de Schachtle)
+    <span class="e">  Photos: Numerous photographers (names listed in the box)</span></div>
+</div>
+<div  class="pv6"> </div>
+<div  class="pv6"> </div>
+
+<!-- ------------------------------------------------------------------------ -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
