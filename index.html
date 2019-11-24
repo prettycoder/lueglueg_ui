@@ -64,6 +64,25 @@
     }
     .topnav.responsive .icon {display: none;}
   }
+  .card {
+       position: relative;
+       /*display: inline-block;*/
+   }
+   .card .front {
+       display: none;
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 99;
+   }
+   card:hover .back {
+     display: none
+   }
+
+   .card:hover .front {
+       display: inline;
+   }
+
   </style>
 </head>
 <body class="black-90">
@@ -124,11 +143,114 @@
 <!--<div class="ma3 ma4-ns pa3 pa4-ns center">-->
 <div class="pl5-l pl3 pr5-l pr3">
   <div class="pt6"> </div>
-  <h1 class="f1 z-2">LuegLueg <span class="e">LookLook</span></h1>
-  <div class="f3 z-2">Äs Memospiil mit 80 Chärtli, wo me mues d’Schwyzertütsch-Englisch Päärli finde. 
-    <span class="e">A memory game with 80 cards, where you have to find the Swiss German – English pairs.</span></div>
-  <div class="db pa2 "><img src="img/baby.png" class=" shadow-5" /> </div>
-  <div id="info" class="pt5"> </div>
+  <h1 class="f1 ">LuegLueg <span class="e">LookLook</span></h1>
+  <div class="db cf ">
+    <div class="f3 fl-l w-30-l  pb4-ns">Äs Memospiil mit 80 Chärtli, wo me mues d’Schwyzertütsch-Englisch Päärli finde. 
+      <span class="e">A memory game with 80 cards, where you have to find the Swiss German – English pairs.</span>
+    </div>
+    <div class="dt dt--fixed pl4-l pb4 fl-l w-70-l">
+      <div class="dt dt--fixed">
+        <div class="dt-row">
+          <div class="dtc tc pa1 ">
+            <div class="card" >
+              <img class="shadow-5 rotate-4 back" src="img/rueckseite.png" alt="rücksiite, back, side" />
+              <img class="shadow-5 rotate-4 front" src="img/knit.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+              <img class="shadow-5 back" src="img/rueckseite.png" alt="rücksiite, back, side" />
+              <img class="shadow-5 front" src="img/tap_water.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+          <div class="dtc tc pa1">
+            <img class="shadow-5" src="img/gruezi.png" alt="rücksiite, back, side" />
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back rotate--2" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front rotate--2" src="img/buesi.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back  rotate-3" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front  rotate-3" src="img/chluepperli.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back rotate-1" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front rotate-1" src="img/finke.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back rotate--2" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front rotate--2" src="img/frown.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front" src="img/baby.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+        </div>
+        <div class="dt-row">
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5  back rotate--1" src="img/rueckseite.png" alt="rücksiite, back, side" />
+           <img class="shadow-5  front rotate--1" src="img/laetsch.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front" src="img/listen.png" alt="rücksiite, back, side" />
+          </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back rotate-3" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front rotate-3" src="img/lose.png" alt="rücksiite, back, side" />
+          </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front" src="img/look.png" alt="rücksiite, back, side" />
+          </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back rotate--1 " src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front rotate--1 " src="img/rande.png" alt="rücksiite, back, side" />
+          </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back rotate--4" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front rotate--4" src="img/hello.png" alt="rücksiite, back, side" />
+          </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back " src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front " src="img/manoeggeli.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+          <div class="dtc tc pa1">
+            <div class="card">
+            <img class="shadow-5 back rotate-2" src="img/rueckseite.png" alt="rücksiite, back, side" />
+            <img class="shadow-5 front rotate-2" src="img/zaeltli.png" alt="rücksiite, back, side" />
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <div id="info" class="pt5 cf"> </div>
   <h2>Info
     <span class="e"> About</span></h2>
   <div>D’Idee für LuegLueg isch in Vancouver, Kanada entstande. De Maia ihri Fründin Sandra (ä Schwyzeri) und de Anders (än Kanadier) händ äs Chind übercho und s’hät gheisse dass d’Maia mit Schwyzertütsch muess hälfe. D’Idee isch dänn schnäll entstande, d’Umsetzig aber nu möglich gsi mit de Hilf vu de Pia (Grafikerin) und Andrea (Buchbinderi).<span class="e">  The idea for LuegLueg originated in Vancouver after Maia’s friend Sandra (Swiss) and Anders (Canadian) had a baby and Maia was asked to help with talking Swiss German to her. The idea then came quickly, but the realization required the collaboration with Pia (graphic design) and Andrea (bookbinding).</span>  </div>

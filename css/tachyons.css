@@ -1056,6 +1056,16 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
    ROTATIONS
 
 */
+.rotate-1 { -webkit-transform: rotate( 1deg ); transform: rotate( 1deg ); }
+.rotate-2 { -webkit-transform: rotate( 2deg ); transform: rotate( 2deg ); }
+.rotate-3 { -webkit-transform: rotate( 3deg ); transform: rotate( 3deg ); }
+.rotate-4 { -webkit-transform: rotate( 4deg ); transform: rotate( 4deg ); }
+.rotate-5 { -webkit-transform: rotate( 5deg ); transform: rotate( 5deg ); }
+.rotate--1 { -webkit-transform: rotate( 359deg ); transform: rotate( 359deg ); }
+.rotate--2 { -webkit-transform: rotate( 358deg ); transform: rotate( 358deg ); }
+.rotate--3 { -webkit-transform: rotate( 357deg ); transform: rotate( 357deg ); }
+.rotate--4 { -webkit-transform: rotate( 356deg ); transform: rotate( 356deg ); }
+.rotate--5 { -webkit-transform: rotate( 355deg ); transform: rotate( 355deg ); }
 .rotate-45 { -webkit-transform: rotate( 45deg ); transform: rotate( 45deg ); }
 .rotate-90 { -webkit-transform: rotate( 90deg ); transform: rotate( 90deg ); }
 .rotate-135 { -webkit-transform: rotate( 135deg ); transform: rotate( 135deg ); }
