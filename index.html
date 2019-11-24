@@ -68,12 +68,13 @@
        position: relative;
        /*display: inline-block;*/
    }
+
    .card .front {
        display: none;
        position: absolute;
        top: 0;
        left: 0;
-       z-index: 99;
+       /*z-index: 99;*/
    }
    card:hover .back {
      display: none
@@ -89,7 +90,7 @@
 
 <!--  ----------------------------------------------------------------- -->
 
-<header id="header" class="black-90  pt2 fixed w-100 bg-white" >
+<header id="header" class="black-90  pt2 fixed w-100 bg-white z-999" >
   <div id="myTopnav" class="topnav tc bt bb b--dotted bl-0 br-0 bw2 w-90 pt2 pb1 center justify-between db flex">
     <a title="home" href="#" class="m2 mh3-ns">
       <img src="img/lueglueg_white_45.png" alt="lueglueg chärtli, lueglueg cards">
